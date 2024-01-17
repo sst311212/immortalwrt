@@ -1,0 +1,17 @@
+msgid "Temperature"
+msgstr "温度"
+
+msgid "Online Users"
+msgstr "線上使用者"
+
+msgid "Max preferred lifetime"
+msgstr "最大偏好生命週期"
+
+msgid "Max valid lifetime"
+msgstr "最大有效生命週期"
+
+msgid "Enable 256-QAM"
+msgstr "啟用 256-QAM"
+
+msgid "802.11n 2.4Ghz Only"
+msgstr "僅限 802.11n 2.4Ghz"

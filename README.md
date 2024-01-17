@@ -54,7 +54,7 @@ To build your own firmware you need a GNU/Linux, BSD or macOS system (case sensi
   - For more details, please see [Build system setup](https://openwrt.org/docs/guide-developer/build-system/install-buildsystem) documentation.
 
   ### Quickstart
-  1. Run `git clone -b <branch> --single-branch --filter=blob:none https://github.com/immortalwrt/immortalwrt` to clone the source code.
+  1. Run `git clone -b <branch> --single-branch --filter=blob:none https://github.com/sst311212/immortalwrt` to clone the source code.
   2. Run `cd immortalwrt` to enter source directory.
   3. Run `./scripts/feeds update -a` to obtain all the latest package definitions defined in feeds.conf / feeds.conf.default
   4. Run `./scripts/feeds install -a` to install symlinks for all obtained packages into package/feeds/
@@ -63,7 +63,7 @@ To build your own firmware you need a GNU/Linux, BSD or macOS system (case sensi
 
   ### Related Repositories
   The main repository uses multiple sub-repositories to manage packages of different categories. All packages are installed via the OpenWrt package manager called opkg. If you're looking to develop the web interface or port packages to ImmortalWrt, please find the fitting repository below.
-  - [LuCI Web Interface](https://github.com/immortalwrt/luci): Modern and modular interface to control the device via a web browser.
+  - [LuCI Web Interface](https://github.com/sst311212/luci): Modern and modular interface to control the device via a web browser.
   - [ImmortalWrt Packages](https://github.com/immortalwrt/packages): Community repository of ported packages.
   - [OpenWrt Routing](https://github.com/openwrt/routing): Packages specifically focused on (mesh) routing.
   - [OpenWrt Video](https://github.com/openwrt/video): Packages specifically focused on display servers and clients (Xorg and Wayland).
