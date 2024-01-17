@@ -185,8 +185,8 @@ Signed-off-by: Aviana Cruz <gwencroft@proton.me>
  
 -			if (prefix_pref > pref)
 -				prefix_pref = pref;
-+				if (iface->max_preferred_lifetime && prefix_pref > iface->max_preferred_lifetime)
-+					prefix_pref = iface->max_preferred_lifetime;
++				if (prefix_pref > floor_preferred_lifetime)
++					prefix_pref = floor_preferred_lifetime;
 +			}
  
 -			if (prefix_valid != UINT32_MAX)
@@ -195,8 +195,8 @@ Signed-off-by: Aviana Cruz <gwencroft@proton.me>
  
 -			if (prefix_valid > leasetime)
 -				prefix_valid = leasetime;
-+				if (iface->max_valid_lifetime && prefix_valid > iface->max_valid_lifetime)
-+					prefix_valid = iface->max_valid_lifetime;
++				if (prefix_valid > floor_valid_lifetime)
++					prefix_valid = floor_valid_lifetime;
 +			}
  
  			if (prefix_pref > prefix_valid)
