@@ -251,6 +251,7 @@ foreach my $mirror (@ARGV) {
 	} elsif ($mirror =~ /^\@IMMORTALWRT$/) {
 		# use ImmortalWrt source server directly
 	} elsif ($mirror =~ /^\@DEBIAN\/(.+)$/) {
+		push @mirrors, "https://free.nchc.org.tw/debian/$1";
 		push @mirrors, "https://mirrors.tencent.com/debian/$1";
 		push @mirrors, "https://mirrors.aliyun.com/debian/$1";
 		push @mirrors, "https://mirrors.tuna.tsinghua.edu.cn/debian/$1";
@@ -259,11 +260,11 @@ foreach my $mirror (@ARGV) {
 		push @mirrors, "https://mirror.leaseweb.com/debian/$1";
 		push @mirrors, "https://mirror.netcologne.de/debian/$1";
 	} elsif ($mirror =~ /^\@APACHE\/(.+)$/) {
+		push @mirrors, "https://dlcdn.apache.org/$1";
 		push @mirrors, "https://mirrors.tencent.com/apache/$1";
 		push @mirrors, "https://mirrors.aliyun.com/apache/$1";
 		push @mirrors, "https://mirrors.tuna.tsinghua.edu.cn/apache/$1";
 		push @mirrors, "https://mirrors.ustc.edu.cn/apache/$1";
-		push @mirrors, "https://dlcdn.apache.org/$1";
 		push @mirrors, "https://mirror.aarnet.edu.au/pub/apache/$1";
 		push @mirrors, "https://mirror.csclub.uwaterloo.ca/apache/$1";
 		push @mirrors, "https://archive.apache.org/dist/$1";
@@ -284,6 +285,7 @@ foreach my $mirror (@ARGV) {
 			push @mirrors, "https://raw.githubusercontent.com/$dir";
 		}
 	} elsif ($mirror =~ /^\@GNU\/(.+)$/) {
+		push @mirrors, "http://ftp.twaren.net/gnu/$1";
 		push @mirrors, "https://mirrors.tencent.com/gnu/$1";
 		push @mirrors, "https://mirrors.aliyun.com/gnu/$1";
 		push @mirrors, "https://mirrors.tuna.tsinghua.edu.cn/gnu/$1";
@@ -309,7 +311,7 @@ foreach my $mirror (@ARGV) {
 			push @extra, "$extra[0]/longterm/v$1";
 		}
 		foreach my $dir (@extra) {
-			push @mirrors, "https://mirror.iscas.ac.cn/kernel.org/$dir";
+			push @mirrors, "http://kernel.cs.nctu.edu.tw/$dir";
 			push @mirrors, "https://mirrors.ustc.edu.cn/kernel.org/$dir";
 			push @mirrors, "https://mirror.nju.edu.cn/kernel.org/$dir";
 			push @mirrors, "https://cdn.kernel.org/pub/$dir";
