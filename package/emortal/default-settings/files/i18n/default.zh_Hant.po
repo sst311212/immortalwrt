@@ -1,0 +1,29 @@
+msgid "Temperature"
+msgstr "温度"
+
+msgid "Online Users"
+msgstr "線上使用者"
+
+msgid "Max preferred lifetime"
+msgstr "最大偏好生命週期"
+
+msgid "Max valid lifetime"
+msgstr "最大有效生命週期"
+
+msgid "Enable 256-QAM"
+msgstr "啟用 256-QAM"
+
+msgid "802.11n 2.4Ghz Only"
+msgstr "僅限 802.11n 2.4Ghz"
+
+msgid "DNS redirect"
+msgstr "DNS 重導向"
+
+msgid "Force redirect all local DNS queries to DNSMasq, a.k.a. DNS Hijacking."
+msgstr "強制重導向所有本地 DNS 請求至 DNSMasq，又稱為 DNS 劫持"
+
+msgid "Enable FullCone NAT"
+msgstr "啟用全錐形 NAT"
+
+msgid "Enable FullCone NAT6"
+msgstr "啟用全錐形 NAT6"
